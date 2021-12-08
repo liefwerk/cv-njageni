@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   darkMode: false,
@@ -8,6 +10,17 @@ module.exports = {
     },
     debugScreens: {
       position: ['bottom', 'right'],
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      orange: colors.orange,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
     },
     extend: {},
   },
