@@ -1,3 +1,7 @@
+function sortByName(values) {
+  return values.slice().sort((a, b) => a.data.sortName.localeCompare(b.data.sortName))
+}
+
 module.exports = (config) => {
   config.addPassthroughCopy({ 'public': './' })
   config.addPassthroughCopy({ 'src/assets': './' })
@@ -15,6 +19,7 @@ module.exports = (config) => {
     }
   })
   config.setDataDeepMerge(true)
+  config.addFilter('sortByName', sortByName)
 
   return {
     dir: {

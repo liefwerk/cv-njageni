@@ -7,15 +7,9 @@
   <main class="">
 
     {% include 'presentation.njk' %}
-    <p>It's written in nunjucks at <code>src/index.njk</code></p>
+    
+    {% include 'experience.njk' %}
+  
 
-    <ul>
-      {%- for post in collections.experience -%}
-        <li>
-          {{ post.data.title }}
-          {{ post.data.period }}
-        </li>
-      {%- endfor -%}
-    </ul>
   </main>
 {% endblock %}

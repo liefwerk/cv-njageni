@@ -1,0 +1,14 @@
+<div class="bg-gray-100 py-16">
+	<div class="container">
+		<h2>Experience</h2>
+		<ul class="grid gap-6 grid-cols-1 md:grid-cols-2">
+		{%- for post in collections.experience | sortByName -%}
+			<li class="">
+			<h3>{{ post.data.title }}</h3>
+			<span class="italic text-gray-800">{{ post.data.period }}</span>
+			<p>{{ post.data.description }}</p>
+			</li>
+		{%- endfor -%}
+		</ul>
+	</div>
+</div>
