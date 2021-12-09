@@ -6,10 +6,21 @@
 {% block body %}
   <main class="">
 
-    {% include 'presentation.njk' %}
+    <div class="relative presentation-header bg-local bg-presentation shadow-md">
+      {% include 'presentation/presentation-header.njk' %}
+    </div>
+    <div class="presentation">
+      {% include 'presentation/presentation.njk' %}
+    </div>
     
-    {% include 'experience.njk' %}
-  
+    <div class="bg-gray-50 py-16">
+      {% include 'competence.njk' %}
+    </div>
+
+    <div class="bg-gray-100 py-16">
+      {% include 'experience.njk' %}
+    </div>
+
 
   </main>
 {% endblock %}

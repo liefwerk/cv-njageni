@@ -6,7 +6,13 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1.5rem',
+      padding: {
+        DEFAULT: '2rem',
+        sm: '2.5rem',
+        md: '3rem',
+        lg: '3.5rem',
+        xl: '5rem',
+      },
     },
     debugScreens: {
       position: ['bottom', 'right'],
@@ -16,7 +22,8 @@ module.exports = {
       current: 'currentColor',
       black: colors.black,
       white: colors.white,
-      gray: colors.trueGray,
+      green: colors.emerald,
+      gray: colors.coolGray,
       orange: colors.orange,
       indigo: colors.indigo,
       red: colors.rose,

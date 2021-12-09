@@ -1,0 +1,27 @@
+<div class="container">
+	<h2>Competence</h2>
+	<div class="flex flex-col lg:flex-row">
+		<div class="lg:w-1/2">
+			<h3>Languages</h3>
+			<ul class="flex flex-wrap justify-start mt-4 mb-12">
+				{% for item in competence.languages %}
+					<li class="pr-12 pt-6">
+						<img class="w-16 mb-2" src="{{ item.src }}" />
+						<h4 class="text-center text-sm uppercase font-semibold">{{ item.name }}</h4>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="lg:w-1/2">
+			<h3>Frameworks</h3>
+			<ul class="flex flex-wrap justify-start mt-4 mb-12">
+				{% for item in competence.frameworks %}
+					<li class="pr-12 pt-6">
+						<img class="w-16 mb-2" src="{{ item.src }}" />
+						<h4 class="text-center text-sm uppercase font-semibold">{{ item.name }}</h4>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
