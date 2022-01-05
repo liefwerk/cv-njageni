@@ -1,0 +1,13 @@
+<div class="container">
+	<h2>Education</h2>
+	<ul class="grid gap-6 grid-cols-1 md:grid-cols-2">
+	{%- for item in education -%}
+		<li>
+			<h3>{{ item.school }}</h3>
+			<span class="italic text-gray-800">{{ item.period }}</span>
+			<p class="font-semibold mt-1">{{ item.degree }}</p>
+			<p class="mt-2">{{ item.description }}</p>
+		</li>
+	{%- endfor -%}
+	</ul>
+</div>
