@@ -1,4 +1,5 @@
-<div class="container">
+{% set randomPicture = images | randomPicture(page) %}
+<div class="container absolute left-0 top-1/2 transform -translate-y-1/2">
 	<h1 class="text-white">Nathanaël JAGENI</h1>
 	<sub class="text-white">
 		<code class="opacity-50 select-none">&lt;p&gt;</code>
@@ -8,10 +9,11 @@
 	<p class="absolute bottom-0 text-sm">
 		<span class="text-gray-600">Artwork by</span> 
 		<a 
-			href="https://www.behance.net/gallery/74478971/Chromatic-Wanderings" 
+			href="{{ randomPicture.url }}" 
 			rel="noreferrer noopener" 
 			target="_blank">
-			Leonardo Solaas
+			{{ randomPicture.artist }}
 		</a>
 	</p>
 </div>
+<img class="w-full h-full object-cover" src="{{ randomPicture.src }}" alt="{{ randomPicture.alt }}" />
