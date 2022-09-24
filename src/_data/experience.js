@@ -1,5 +1,17 @@
 module.exports = [
 	{ 
+		title: 'Garamond',
+		period: 'April 2022 - Current day',
+		job: 'Web Developer - PHP/JS/CSS',
+		description: 'Creating, deploying and managing WordPress instances. Interacting with the clients.'
+	},
+	{ 
+		title: 'Techminate',
+		period: 'June 2021 - Current day',
+		job: 'Full Stack Developer - JS/Typescript/CSS',
+		description: 'Creating and deploying SPAs in an open-source context using Vue3/Nuxt, React/Next and Laravel.'
+	},
+	{ 
 		title: 'Accolade Polyglotte',
 		period: 'January 2020 - Current day',
 		job: 'Web Developer - Freelancer',
