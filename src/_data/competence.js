@@ -11,6 +11,6 @@ module.exports = {
     { name: 'react', src: '/icons/react.png' },
     { name: 'wordpress', src: '/icons/wordpress.png' },
     { name: 'woocommerce', src: '/icons/woocommerce.png' },
-    { name: 'ruby', src: '/icons/ruby-on-rails.png' },
+    { name: 'laravel', src: '/icons/laravel.png' },
   ]
 }
