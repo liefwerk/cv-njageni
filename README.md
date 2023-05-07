@@ -27,7 +27,7 @@ This was my first project using *Eleventy*. What I mostly learned was working wi
 - `npm run build` when you're ready to build a production bundle
 
 ## :watch: What comes next ?
-What comes next is the addition of a blog part at `nathanaeljageni.fr/posts/...`.
+What comes next is the addition of a blog part at `nat.fr/posts/...`.
 
 
 ---
