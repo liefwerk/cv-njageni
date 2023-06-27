@@ -1,7 +1,7 @@
 module.exports = [
 	{ 
 		title: 'Garamond',
-		period: 'April 2022 - Current day',
+		period: 'April 2022 - January 2023',
 		job: 'Web Developer - PHP/JS/CSS',
 		description: 'Creating, deploying and managing WordPress instances. Interacting with the clients.'
 	},
